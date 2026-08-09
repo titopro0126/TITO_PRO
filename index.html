@@ -69,22 +69,6 @@
                 <div class="profile-wrapper">
                     <img class="profile-image" src="Imagen/5.png" alt="TITO PRO" />
                     <div class="profile-ring"></div>
-                    <svg class="profile-dots profile-dots-1" viewBox="0 0 100 100">
-                        <circle cx="10" cy="10" r="4" />
-                        <circle cx="30" cy="10" r="4" />
-                        <circle cx="50" cy="10" r="4" />
-                        <circle cx="10" cy="30" r="4" />
-                        <circle cx="30" cy="30" r="4" />
-                        <circle cx="50" cy="30" r="4" />
-                    </svg>
-                    <svg class="profile-dots profile-dots-2" viewBox="0 0 100 100">
-                        <circle cx="10" cy="10" r="4" />
-                        <circle cx="30" cy="10" r="4" />
-                        <circle cx="50" cy="10" r="4" />
-                        <circle cx="10" cy="30" r="4" />
-                        <circle cx="30" cy="30" r="4" />
-                        <circle cx="50" cy="30" r="4" />
-                    </svg>
                 </div>
             </div>
         </div>
@@ -111,11 +95,11 @@
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">10+</span>
+                            <span class="stat-number">10</span>
                             <span class="stat-label">Años de Experiencia</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">4+</span>
+                            <span class="stat-number">5</span>
                             <span class="stat-label">Proyectos Completados</span>
                         </div>
                         <div class="stat-item">
@@ -126,7 +110,6 @@
                     <div class="about-social">
                         <a href="https://wa.me/+5356700532" target="_blank" class="social-link"><i class="bi bi-whatsapp"></i></a>
                         <a href="https://t.me/@TITOPRO0126" target="_blank" class="social-link"><i class="bi bi-telegram"></i></a>
-                        <a href="https://github.com/TuUsuarioGitHub" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center;">
@@ -159,7 +142,12 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="toast-notification" id="toast">
+        <i class="bi bi-check-circle"></i>
+        <span class="toast-text">¡Enlace copiado al portapapeles!</span>
+    </div>
+
+    <script src="js/scripts.js"></script>
     <script>
         document.getElementById('navbarToggler').addEventListener('click', function() {
             document.getElementById('navbarCollapse').classList.toggle('show');
