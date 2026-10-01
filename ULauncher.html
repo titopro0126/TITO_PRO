@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>ULauncher | TITO PRO</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">J.R-<span class="highlight">Studio</span></span>
+            </a>
+            <button class="navbar-toggler" id="navbarToggler">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <h1><span class="gradient">ULauncher</span></h1>
+            <p class="description">
+                <strong>ULauncher</strong> es un launcher personalizado para Minecraft, desarrollado exclusivamente para el servidor <strong>J.R-Craft</strong>. Su objetivo es ofrecer una experiencia de juego más cómoda, rápida y segura desde el primer clic.
+                <br><br>
+                <strong>Características destacadas:</strong><br>
+                • 🔐 <strong>Compatibilidad:</strong> soporte para múltiples versiones del juego.<br>
+                • ⚡ <strong>Acceso rápido:</strong> inicio optimizado para entrar al servidor sin complicaciones.<br>
+                • 🛡️ <strong>Seguridad:</strong> conexión protegida y verificación de integridad.<br>
+                • 🎨 <strong>Interfaz intuitiva:</strong> diseño pensado para que cualquier jugador pueda usarlo sin esfuerzo.<br>
+                <br>
+                Con ULauncher, entrar a J.R-Craft deja de ser un proceso técnico y se convierte en una experiencia simple, moderna y confiable.
+            </p>
+            <div class="project-gallery">
+                <img src="Imagen/ULauncher/1.png" alt="ULauncher 1" />
+                <img src="Imagen/ULauncher/2.png" alt="ULauncher 2" />
+                <img src="Imagen/ULauncher/3.png" alt="ULauncher 3" />
+                <img src="Imagen/ULauncher/4.png" alt="ULauncher 4" />
+                <img src="Imagen/ULauncher/5.png" alt="ULauncher 5" />
+                <img src="Imagen/ULauncher/6.png" alt="ULauncher 6" />
+                <img src="Imagen/ULauncher/7.png" alt="ULauncher 7" />
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>¿Te gusta lo que <span class="gradient">ves</span>?</h2>
+            <p>Hablemos sobre cómo puedo ayudarte con tu proyecto.</p>
+            <a href="contact.html" class="btn-primary">
+                <i class="bi bi-chat-dots"></i> Contáctame
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright">© 2026 <span>TITO PRO</span> - J.R-Studio</div>
+            <div class="footer-links">
+                <a href="#!">Privacidad</a>
+                <a href="#!">Términos</a>
+                <a href="contact.html">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('navbarToggler').addEventListener('click', function() {
+            document.getElementById('navbarCollapse').classList.toggle('show');
+        });
+
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+        document.onkeydown = function(e) {
+            if (e.key === "F12" || (e.ctrlKey && (e.key === "u" || e.key === "s" || e.key === "c" || e.key === "i")) || 
+                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C"))) {
+                return false;
+            }
+        };
+    </script>
+</body>
+</html>
