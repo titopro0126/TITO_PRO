@@ -65,6 +65,39 @@
             margin-bottom: 1rem;
         }
 
+        /* --- Fila de metadatos (precio + etiquetas) --- */
+        .project-card .meta-row {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            row-gap: 0.5rem;
+        }
+
+        .project-card .meta-row .price {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            padding: 0.25rem 0.9rem;
+        }
+
+        /* === TODAS las etiquetas con el mismo diseño (morado, sin iconos) === */
+        .project-card .platform-tag {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            padding: 0.28rem 0.8rem;
+            border-radius: 50px;
+            white-space: nowrap;
+            line-height: 1;
+            color: #6c63ff;
+            background: rgba(108, 99, 255, 0.12);
+            border: 1px solid rgba(108, 99, 255, 0.25);
+        }
+
         .toast-notification {
             position: fixed;
             bottom: 30px;
@@ -129,10 +162,12 @@
 
                 <!-- GameHook -->
                 <div class="project-card">
-                    <div class="icon"><i class=""></i></div>
                     <h3>GameHook</h3>
                     <p>Sistema anti-trampas con escaneo de procesos y panel administrativo</p>
-                    <span class="price">$50 USD</span>
+                    <div class="meta-row">
+                        <span class="price">$50 USD</span>
+                        <span class="platform-tag">Escritorio</span>
+                    </div>
                     <div class="card-actions">
                         <a href="GameHook.html" class="btn-sm btn-primary-sm">Ver más</a>
                     </div>
@@ -140,10 +175,12 @@
 
                 <!-- HabanaCity-Launcher -->
                 <div class="project-card">
-                    <div class="icon"><i class=""></i></div>
                     <h3>HabanaCity-Launcher</h3>
                     <p>Launcher personalizado para GTA SAMP con registro de PCU</p>
-                    <span class="price">$30 USD</span>
+                    <div class="meta-row">
+                        <span class="price">$30 USD</span>
+                        <span class="platform-tag">Escritorio</span>
+                    </div>
                     <div class="card-actions">
                         <a href="HabanaCity-Launcher.html" class="btn-sm btn-primary-sm">Ver más</a>
                     </div>
@@ -151,10 +188,12 @@
 
                 <!-- PawnScript Studio -->
                 <div class="project-card">
-                    <div class="icon"><i class=""></i></div>
                     <h3>PawnScript Studio</h3>
                     <p>Editor de código optimizado para GTA SAMP con herramientas integradas</p>
-                    <span class="price">$50 USD</span>
+                    <div class="meta-row">
+                        <span class="price">$50 USD</span>
+                        <span class="platform-tag">Escritorio</span>
+                    </div>
                     <div class="card-actions">
                         <a href="PawnScript Studio.html" class="btn-sm btn-primary-sm">Ver más</a>
                     </div>
@@ -162,21 +201,25 @@
 
                 <!-- CERBERUS -->
                 <div class="project-card">
-                    <div class="icon"><i class=""></i></div>
                     <h3>CERBERUS</h3>
                     <p>Sistema de seguridad avanzado para comunidades de juegos</p>
-                    <span class="price">$100 USD</span>
+                    <div class="meta-row">
+                        <span class="price">$100 USD</span>
+                        <span class="platform-tag">Escritorio</span>
+                    </div>
                     <div class="card-actions">
                         <a href="Cerberus.html" class="btn-sm btn-primary-sm">Ver más</a>
                     </div>
                 </div>
 
-                <!-- J.R-Launcher  -->
+                <!-- J.R-Launcher -->
                 <div class="project-card">
-                    <div class="icon"><i class=""></i></div>
-                    <h3>J.R-Launcher </h3>
+                    <h3>J.R-Launcher</h3>
                     <p>Sistema de seguridad avanzado para comunidades de juegos</p>
-                    <span class="price">$100 USD</span>
+                    <div class="meta-row">
+                        <span class="price">$50 USD</span>
+                        <span class="platform-tag">Escritorio</span>
+                    </div>
                     <div class="card-actions">
                         <a href="J.R-Launcher.html" class="btn-sm btn-primary-sm">Ver más</a>
                     </div>
@@ -184,10 +227,12 @@
 
                 <!-- DayZ-Wikipedia -->
                 <div class="project-card">
-                    <div class="icon"><i class=""></i></div>
                     <h3>DayZ-Wikipedia</h3>
                     <p>Aplicación de escritorio con Wikipedia integrada de DayZ para consulta rápida</p>
-                    <span class="price">$20 USD</span>
+                    <div class="meta-row">
+                        <span class="price">$20 USD</span>
+                        <span class="platform-tag">Escritorio</span>
+                    </div>
                     <div class="card-actions">
                         <a href="DayZ.html" class="btn-sm btn-primary-sm">Ver más</a>
                     </div>
@@ -195,12 +240,27 @@
 
                 <!-- ULauncher -->
                 <div class="project-card">
-                    <div class="icon"><i class=""></i></div>
                     <h3>ULauncher</h3>
                     <p>Launcher personalizado para Servidores de Minecraft</p>
-                    <span class="price">$50 USD</span>
+                    <div class="meta-row">
+                        <span class="price">$40 USD</span>
+                        <span class="platform-tag">Escritorio</span>
+                    </div>
                     <div class="card-actions">
                         <a href="ULauncher.html" class="btn-sm btn-primary-sm">Ver más</a>
+                    </div>
+                </div>
+
+                <!-- WoW - Web -->
+                <div class="project-card">
+                    <h3>WoW</h3>
+                    <p>Página web para servidor personalizado de WoW</p>
+                    <div class="meta-row">
+                        <span class="price">$30 USD</span>
+                        <span class="platform-tag">Web</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="WoW.html" class="btn-sm btn-primary-sm">Ver más</a>
                     </div>
                 </div>
 
@@ -271,7 +331,7 @@
         document.onkeydown = function(e) {
             if (e.key === "F12" || (e.ctrlKey && (e.key === "u" || e.key === "s" || e.key === "c" || e.key === "i")) || 
                 (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C"))) {
-                return false;
+                    return false;
             }
         };
     </script>
